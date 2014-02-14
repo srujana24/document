@@ -1,0 +1,59 @@
+<br>
+                <img border="2" src="http://www.santacatarina.travel/images_en/bt_plan_your_trip.jpg" alt="Pulpit rock" width="450" height="228">
+
+                    <h3> <i> Welcome to Online TRIP PLANNER!!!! </i> </h3>
+        
+        <button type="button" onclick="myFunction()">About us!</button>
+    <p id="demo">
+        Click above to know more about <i> Plan Your trip </i>
+</p>
+                    <p align=right><I> Like us on facebook at</I> </p>
+                    <p align=right><a href="https://www.facebook.com/planyoutrip" target= "_blank"><B>like us</B></a> </p>
+    <script>
+    function myFunction()
+{
+        document.getElementById("demo").innerHTML="Welcome to  <i> plan your trip </i>, make your trip more memorable with us,choose your destination either local or international and  we will plan your week accordingly by helping you choose the best hotels at affordable prices.!";
+}
+    </script>
+<button type="button" onclick="myFunction1()">Local Hotspot!</button>
+    <p id="demo1">
+        Click above to know about the Local Event happening in the city
+</p>
+                    <script>
+    function myFunction1()
+{
+        document.getElementById("demo1").innerHTML="UMKC Career Fair";
+}
+    </script>
+                    <h3> Get directions from source to destination </h3>                    
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>       
+            <p> <i> Choose your Source and Destination and get directions</i> </p>
+            <button id="button">get Direction</button>
+            <div id="map_canvas" style="height: 400px; width: 400px"></div>
+                    <p><button onclick="click_me()" type="button">select number of people!!!</button></p>
+<div id="result"></div>
+<script>
+    function click_me()
+{
+if(typeof(Storage)!=="undefined")
+  {
+  if (sessionStorage.count)
+    {
+    sessionStorage.count=Number(sessionStorage.count)+1;
+    }
+  else
+    {
+    sessionStorage.count=1;
+    }
+  document.getElementById("result").innerHTML="You have selected   " + sessionStorage.count + "  member(s) for your trip in this session.";
+  }
+else
+  {
+  document.getElementById("result").innerHTML="local webstorage is not supported ...";
+  }
+}
+</script>
+<p> <i> Enjoy your trip...have fun!!!! </i> </p>
+
+    
+      
