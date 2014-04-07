@@ -1,0 +1,4 @@
+c:\users\pranu\documents\visual studio 2010\Projects\trip\trip\bin\trip.dll
+c:\users\pranu\documents\visual studio 2010\Projects\trip\trip\bin\trip.pdb
+c:\users\pranu\documents\visual studio 2010\Projects\trip\trip\obj\Debug\trip.dll
+c:\users\pranu\documents\visual studio 2010\Projects\trip\trip\obj\Debug\trip.pdb
